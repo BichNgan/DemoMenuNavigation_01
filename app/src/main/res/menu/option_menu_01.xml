@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/app_bar_search_01"
+        android:icon="@drawable/baseline_search_24"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/share_01"
+        android:title="Share"
+        android:icon="@drawable/baseline_share_24"
+        app:showAsAction="always">
+        <menu >
+            <item android:title="Facebook"
+                android:id="@+id/facebook01"
+                android:icon="@drawable/facebook"/>
+            <item android:title="Zalo"
+                android:id="@+id/zalo01"
+                android:icon="@drawable/zalo" />
+        </menu>
+    </item>
+    <item android:title="Setting"
+        android:id="@+id/setting01"
+        android:icon="@drawable/baseline_settings_24"
+        app:showAsAction="always"/>
+    <item android:title="Open"
+        android:id="@+id/open01"
+        android:icon="@drawable/open"
+        app:showAsAction="never"/>
+    <item android:title="Delete"
+        android:id="@+id/delete01"
+        android:icon="@drawable/delete"
+        app:showAsAction="never"/>
+
+    <item android:title="Contact"
+        android:id="@+id/contact01"
+        android:icon="@drawable/contact"
+        app:showAsAction="never">
+        <menu >
+            <item android:title="Email"
+                android:id="@+id/email01"
+                app:showAsAction="withText"/>
+            <item android:title="Phone"
+                android:id="@+id/phone01"
+                app:showAsAction="withText"/>
+        </menu>
+    </item>
+</menu>
